@@ -30,3 +30,63 @@ The system uses **RF communication** between a **transmitter (hand unit)** and a
 
 ## 📂 Folder Structure
 
+Gesture_Controlled_Robot/
+├── Transmitter/
+│ └── transmitter.ino
+├── Receiver/
+│ └── receiver.ino
+└── README.md
+
+
+---
+
+## ⚡ Working Principle
+
+1. **Transmitter Unit** reads hand tilt values from the accelerometer.  
+2. It encodes motion direction (Forward, Backward, Left, Right, Stop).  
+3. The RF Transmitter sends this data wirelessly to the receiver module.  
+4. The **Receiver Unit** decodes the signal and drives motors accordingly using the **L293D**.  
+5. The robot moves in real time as the hand tilts.
+
+---
+
+## 🧠 Gesture Mapping
+
+| Gesture | Robot Movement |
+|----------|----------------|
+| Hand Forward | Move Forward |
+| Hand Backward | Move Backward |
+| Hand Left Tilt | Turn Left |
+| Hand Right Tilt | Turn Right |
+| Hand Flat | Stop |
+
+---
+
+## 🧩 Libraries Used
+
+- [VirtualWire](https://www.airspayce.com/mikem/arduino/VirtualWire/) – for RF communication
+
+---
+
+## 🔋 Power Supply
+
+- Transmitter: 9 V battery  
+- Receiver: 12 V (for motors) + 5 V for Arduino  
+
+---
+
+## 🧾 Applications
+
+- Gesture-controlled robots  
+- Robotics education projects  
+- Assistive mobility systems  
+- Wireless robot navigation  
+
+---
+
+## 👩‍💻 Author
+
+**Arpita Sharma**  
+📧 [arpitasharma5022@gmail.com](mailto:arpitasharma5022@gmail.com)  
+🎓 Electronics and Communication Engineering, JNGEC Sundarnagar  
+🔗 [LinkedIn](https://www.linkedin.com/in/arpita-sharma-686044358/)
